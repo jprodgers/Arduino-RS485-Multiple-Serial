@@ -103,13 +103,8 @@ SoftwareSerial rs485Port2(PORT2_TX, PORT2_RX);
 // Stuff to change
 boolean master = false;      // master receives data only
 boolean debug = false;       // enables an ecco test, overides master
-<<<<<<< HEAD
-boolean verboseMode = true;  // mostly prints the data streams to serial
-int sendReceiveTimeout = (dataLength*3)*(100000/BAUDRATE); // timeout before send or receives gives up
-=======
 boolean verboseMode = false; // mostly prints the data streams to serial
-int sendReceiveTimeout = 5; // timeout before send or receives gives up
->>>>>>> origin/master
+int sendReceiveTimeout = (dataLength*3)*(100000/BAUDRATE); // timeout before send or receives gives up
 int sendDelay = 500;         // Time between the slave sending data
 
 void setup() {
